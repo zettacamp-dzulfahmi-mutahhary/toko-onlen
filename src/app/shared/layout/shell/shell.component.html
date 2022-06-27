@@ -1,0 +1,7 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav [opened]="isOpened | async">test</mat-sidenav>
+    <mat-sidenav-content>
+        <app-header [sideNavRef]="sidenav"></app-header>
+        <ng-content></ng-content>
+    </mat-sidenav-content>
+</mat-sidenav-container>
